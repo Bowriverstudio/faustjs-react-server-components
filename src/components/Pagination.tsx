@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import type { WPPageInfo } from 'client';
+import Link from "next/link";
+import type { WPPageInfo } from "client";
 
 interface NextPageNavigationProps {
   href: string;
@@ -7,8 +7,8 @@ interface NextPageNavigationProps {
 
 function NextPageNavigation(props: NextPageNavigationProps) {
   return (
-    <Link href={props.href}>
-      <a aria-label={'Next page.'}>Next Page →</a>
+    <Link href={props.href} prefetch={false}>
+      <a aria-label={"Next page."}>Next Page →</a>
     </Link>
   );
 }
@@ -19,8 +19,8 @@ interface PreviousPageNavigationProps {
 
 function PreviousPageNavigation(props: PreviousPageNavigationProps) {
   return (
-    <Link href={props.href}>
-      <a aria-label={'Previous page.'}>← Previous Page</a>
+    <Link href={props.href} prefetch={false}>
+      <a aria-label={"Previous page."}>← Previous Page</a>
     </Link>
   );
 }
