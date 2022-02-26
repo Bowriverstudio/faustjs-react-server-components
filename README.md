@@ -1,14 +1,5 @@
 # Next.js Headless WordPress Getting Started Example
 
-## Setup
+- lighthouse https://faustjs-react-server-components.vercel.app/posts/post-41 --chrome-flags="--headless" --output json,html --output-path public/pagespeed/post-41 --throttling.cpuSlowdownMultiplier=6 --view
 
-See the [setup steps](https://github.com/wpengine/faustjs#quick-start).
-
-## Run it
-
-```bash
-npm install
-npm run dev
-```
-
-[http://localhost:3000]()
+## server-components
