@@ -1,6 +1,11 @@
-const { withFaust } = require('@faustjs/next');
+const { withFaust } = require("@faustjs/next");
 
 /**
  * @type {import('next').NextConfig}
  **/
-module.exports = withFaust();
+module.exports = withFaust({
+  experimental: {
+    runtime: "nodejs",
+    serverComponents: true,
+  },
+});
