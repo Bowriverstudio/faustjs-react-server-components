@@ -14,3 +14,5 @@ npm install next@latest react@rc react-dom@rc
 Finish: 569 ms
 DOMContentLoaded: 396 ms
 Load: 506 ms
+
+Currently this experiment is not working - just parked for now and we may get back to this later on.
